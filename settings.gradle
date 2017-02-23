@@ -1,0 +1,4 @@
+rootProject.name = 'search-engine'
+include 'search-engine-crawler'
+rootProject.name = 'search-engine'
+
