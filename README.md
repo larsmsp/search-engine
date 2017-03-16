@@ -6,7 +6,7 @@ Skrevet i Kotlin og benytter byggesystemet gradle.
 ## Sjekk ut koden
 
 ```bash
-`$ git clone https://github.com/larsmsp/search-engine.git`
+$ git clone https://github.com/larsmsp/search-engine.git
 ```
 
 ## Bygg
