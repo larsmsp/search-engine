@@ -18,7 +18,7 @@ $ gradle installDist
 ```
 
 Etter bygging vil det legge seg eksekverebare script i
-mappen `build/install/bin.
+mappen `build/install/bin`.
 
 ## Kjøring
 
