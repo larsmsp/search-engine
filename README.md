@@ -51,7 +51,7 @@ Denne delen av scriptet vil lese alle HTML-filer i `<inputDir>` og parse dem til
 ```
 
 Fordi URL-en er unik per side, så vil parsingen benytte dette som ID til indekseringen senere.
-Det vil genereres èn JSON-fil per HTML-fil og disse vil havne i `<outputDir>`
+Det vil genereres én JSON-fil per HTML-fil og disse vil havne i `<outputDir>`.
 
 ## Indeksering
 
