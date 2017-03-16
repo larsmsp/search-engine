@@ -14,7 +14,7 @@ Skrevet i Kotlin og benytter byggesystemet gradle.
 Kjør følgende i mappen koden ble sjekket ut til 
 
 ```bash
-`$ gradle installDist`
+$ gradle installDist
 ```
 
 Etter bygging vil det legge seg eksekverebare script i
