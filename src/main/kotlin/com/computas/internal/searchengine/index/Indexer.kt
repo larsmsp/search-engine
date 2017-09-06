@@ -9,14 +9,14 @@ import org.apache.log4j.Logger
 /**
  * @author Lars Martin S. Pedersen on 16/03/2017.
  */
-class Indexer(var readFrom: String = ".", var apiUrl: String, var apiKey: String) {
+class Indexer(var readFrom: String = ".", var apiUrl: String) {
 
     companion object {
         val log: Logger = Logger.getLogger(com.computas.internal.searchengine.index.Indexer::class.java.name)
     }
 
     val url: String
-        get() = if (apiUrl.endsWith("/")) "$apiUrl$apiKey/put" else "$apiUrl/$apiKey/put"
+        get() = if (apiUrl.endsWith("/")) "${apiUrl}put" else "$apiUrl/put"
 
     fun index() {
         val documents = mutableListOf<Map<String, Any?>>()

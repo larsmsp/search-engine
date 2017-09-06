@@ -22,11 +22,11 @@ fun main(args: Array<String>) {
         Parser(args[1], args[2]).parse()
     }
     else if ("index".equals(method)) {
-        if (args.size < 4) {
+        if (args.size < 3) {
             usageIndex()
         }
         else {
-            Indexer(args[1], args[2], args[3]).index()
+            Indexer(args[1], args[2]).index()
         }
     }
 }

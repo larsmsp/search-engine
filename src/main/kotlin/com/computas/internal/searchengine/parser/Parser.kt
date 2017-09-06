@@ -28,8 +28,10 @@ class Parser(var readFrom: String = ".", var saveTo: String = ".") {
                 log.debug("Found url: $url")
                 val document = Jsoup.parse(reader.readText())
                 val title = document.title()
-                val body = document.body().text()
-                json = getJsonDocument(url, title, body)
+                val body = document.body().select("main > div.container")
+                if (body.isNotEmpty()) {
+                    json = getJsonDocument(url, title, body[0].text())
+                }
             }
             val outputFile = Paths.get(saveTo, "${file.nameWithoutExtension}.json")
             File(outputFile.toString()).printWriter().use { writer ->
